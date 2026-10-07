@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    margin-bottom: 25px;
+    color: #222222;
+    text-align: center;
+}
+.task-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 35px;
+    width: 100%;
+    max-width: 1000px; /*  ширина макету  */
+}
+.task-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #048f8f;
+}
+.layout-wrapper {
+    width: 100%;
+    border: 1px solid #777777;
+    background-color: #ffffff;
+}
+/* Спільні стилі блоків з макету */
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+/* Верхній блок (Y: 100px до 570px = 470px) */
+.top-img-float,
+.top-img-flex {
+    background-color: #c2d4f0; 
+    height: 470px;
+}
+.top-text-float,
+.top-text-flex {
+    background-color: #b5ebfb; 
+    height: 470px;
+}
+/* Середній блок (Y: 570px до 720px = 150px) */
+.mid-img {
+    background-color: #2b73cd; 
+    color: #1a1a1a;
+    height: 150px;
+    width: 100%;
+}
+/* Нижній блок (Y: 720px до 850px = 130px) */
+.bot-text {
+    background-color: #fcf3b8; /* Жовтий */
+    height: 130px;
+    width: 100%;
+}
+/* ЗАВДАННЯ 1: Технологія Float */
+.top-img-float {
+    float: left;
+    width: 25%; /* X: 250px / 1000px */
+}
+.top-text-float {
+    float: left;
+    width: 75%; /* X: 750px / 1000px */
+}
+/* Скидання плаваючого потоку (Clearfix) */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*  Технологія Flexbox */
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    width: 100%;
+}
+.top-img-flex {
+    width: 25%; /* X: 250px / 1000px */
+}
+.top-text-flex {
+    width: 75%; /* X: 750px / 1000px */
+}

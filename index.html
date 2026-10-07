@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 — ІС-42 Лісова А. М.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Лабораторна робота №3: Блочна верстка макету</h1>
+    <!--  Верстка макету через Float -->
+    <section class="task-container">
+        <h2>Завдання 1. Верстка за допомогою Float (ширина у %)</h2>
+        <div class="layout-wrapper float-layout clearfix">
+            <!-- Верхній блок:  -->
+            <div class="block top-img-float">Img.</div>
+            <div class="block top-text-float">Text</div>
+            <!-- Скидання обтікання -->
+            <div class="clearfix"></div>       
+            <!-- Середній та нижній блоки -->
+            <div class="block mid-img">Img.</div>
+            <div class="block bot-text">Text</div>
+        </div>
+    </section>
+    <!-- Верстка макету через Flexbox -->
+    <section class="task-container">
+        <h2>Завдання 2. Верстка за допомогою Flexbox</h2>
+        <div class="layout-wrapper flex-layout">
+            <!-- Верхній рядок з двома колонками -->
+            <div class="flex-row">
+                <div class="block top-img-flex">Img.</div>
+                <div class="block top-text-flex">Text</div>
+            </div>         
+            <!-- Середній та нижній блоки -->
+            <div class="block mid-img">Img.</div>
+            <div class="block bot-text">Text</div>
+        </div>
+    </section>
+</body>
+</html>
